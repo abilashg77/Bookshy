@@ -29,9 +29,14 @@ h1{
         color: aliceblue;
         border-radius: 10px;
         margin: 20px;
+        display: inline-block;
+        vertical-align: top;
     }
     .book h2{
         color: pink;
+    }
+    .book h4{
+        color: darkred;
     }
 
     .one{
@@ -44,6 +49,7 @@ h1{
         margin-top: 10px;
     }
     .wm{
+        display: flex;
         margin-top: 10px;
         color: black;
         background-color: pink;
@@ -70,6 +76,7 @@ h1{
        top: 0;
        left: 0;
        z-index: 2;
+       display:none;
     }
 .overebox{
     background-color: red;
@@ -80,8 +87,9 @@ h1{
     top: 20%;
     left: 30%;
     z-index: 3;
+    display: none;
 }
-.place input,textarea{
+.place input{
     background: transparent;
     border: none;
     width: 100%;
@@ -91,12 +99,40 @@ h1{
     border-bottom: solid black 2px;
 
 }
+.place textarea{
+    background: transparent;
+    border: none;
+    width: 90%;
+    margin: 15px;
+    padding: 15px;
+    font-size: 20px;
+    border: solid black 2px;
+}
+
 .noo{
-    font-size: 1.5em;
-    padding-left: 5px;
+    font-size: 1em;
+    padding: 7px;
     margin: 5px;
+    background-color: black;
+    color: aliceblue;
 
 }
+.place input::placeholder{
+    color: black;
+}
+
+.place textarea::placeholder{
+    color: black;
+}
+
+.place input:focus{
+    outline: none;
+}
+
+.place textarea:focus{
+    outline: none;
+}
+
 
 
 
